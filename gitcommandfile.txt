@@ -43,3 +43,43 @@ git add filename
 
 ----------to display short and precise message--
 git status -s or -short
+
+----to see the what changes made to the files going commit and in stage use git diff-----------
+git diff --statged
+git diff 
+git diff --staged --no-renames
+
+-----------to commit all file including modified without staging the will skip git add command----------
+git commit -a -m "Commit all files"
+
+-----------checK commit logs---------
+git log
+git log -1
+git log --stat
+git log --patch
+
+
+--to remove the file from project
+git rm <filename>
+
+--if you don;t want to file to tracked using git--
+git rm --cached <filename> now file will be present but not tracked
+
+--if you rename the file
+git mv oldfilename newfilename
+
+--------to create a new branch ---------
+git checkout -b newbranch
+
+
+-- get out of branch from work in progress to switch into new branch
+git stash
+
+--merge the new branch created and some commits done on the into master branch which is currently you are using
+git merge newbranch
+
+--if someone want to download project in any of the location
+git clone "use git repository url"
+
+
+
