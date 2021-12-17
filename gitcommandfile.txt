@@ -1,0 +1,45 @@
+use git-bash to run below command
+git --version
+
+--set configuration----
+git config --global user.name " username"
+git config --global user.email "user email"
+
+--get configurtion---
+git config --list
+
+--get specific configuration
+git config user.name
+
+--get command details
+man --help
+
+--initilize the version control to the project
+git init 
+
+--add the files to git for version control
+
+git add .
+
+-- commit local file changes 
+git commit -m "message you want to give at the time of commit"
+
+--create a new branch if you need else continue with master
+git branch -M <branchname else master by default>
+
+--add local project to remote origin git hub
+git remote add origin https://github.com/OmDurgesh/MyFirstProject.git
+
+it will ask for git hub user id and password
+you have successfully create master branch to track remote master from origin.
+
+
+--clear the screen 
+clear
+-------------------------Important command to use to check status and staged the new file/modified file/deleted file-------------------
+git status
+
+git add filename
+
+----------to display short and precise message--
+git status -s or -short
